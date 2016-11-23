@@ -63,11 +63,31 @@ html, body {
 	text-transform: uppercase;
 }
 
-@media screen and (max-height: 800px) {
-	#tip{
-		display: none;
-	}
+#title {
+	font-size: 40px;
+	font-family: BPreplay;
 }
+
+#portfolio .item {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	color: white;
+	font-family: BPreplay;
+	margin: 10px 20px;
+}
+
+#portfolio .item img {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
 
 
 .background {
@@ -98,7 +118,7 @@ html, body {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 .background:first-child {
-	background-image: url("../Images/back1.jpg");
+	background-image: url("../Images/back2t.jpg");
 	-webkit-transform: translateY(-15vh);
 		    transform: translateY(-15vh);
 }
@@ -110,7 +130,7 @@ html, body {
 	background-image: url("../Images/back2.jpg");
 }
 .background:nth-child(3) {
-	background-image: url("../Images/background.jpg");
+	background-image: url("../Images/back2к.jpg");
 }
 
 /* Set stacking context of slides */
