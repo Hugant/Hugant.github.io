@@ -17,7 +17,6 @@ html, body {
 	left: 50%;
 	margin-left: -150px;
 	margin-top: -200px;
-	padding: 10px;
 	border-radius: 10px;
 	background: rgba(0, 0, 0, 0.3);
 }
@@ -74,7 +73,7 @@ html, body {
 	height: 300px;
 	padding: 10px;
 	border-radius: 10px;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 	color: white;
 	font-family: BPreplay;
@@ -85,7 +84,7 @@ html, body {
 	width: 200px;
 	height: 200px;
 	border-radius: 10px;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 
@@ -118,7 +117,7 @@ html, body {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 .background:first-child {
-	background-image: url("../Images/back2t.jpg");
+	background-image: url("../Images/back.jpg");
 	-webkit-transform: translateY(-15vh);
 		    transform: translateY(-15vh);
 }
@@ -130,7 +129,7 @@ html, body {
 	background-image: url("../Images/back2.jpg");
 }
 .background:nth-child(3) {
-	background-image: url("../Images/back2к.jpg");
+	background-image: url("../Images/back3.jpg");
 }
 
 /* Set stacking context of slides */
