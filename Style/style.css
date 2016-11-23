@@ -29,13 +29,13 @@ html, body {
 }
 
 #photo p {
-	font-size: 30px;
+	font-size: 1.9em;
 }
 
 #social div{
 	display: inline-block;
 	width: 100px;
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 #social  a {
@@ -63,7 +63,7 @@ html, body {
 }
 
 #title {
-	font-size: 40px;
+	font-size: 2.5em;
 	font-family: BPreplay;
 }
 
@@ -202,4 +202,19 @@ html, body {
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
 	-webkit-transform: translateY(15vh);
 		    transform: translateY(15vh);
+}
+
+
+
+
+.background-mobile {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	will-change: transform;
+	-webkit-backface-visibility: hidden;
+		    backface-visibility: hidden;
+	height: 130vh;
+	width: 100%;
 }
