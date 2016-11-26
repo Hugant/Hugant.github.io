@@ -14,25 +14,14 @@
 	
 	<body>
 		<div class = "loaderSection">
-			<div class = "loader">
-				<div class = "ball" id = "ball_1">
-					<div class = "innerBall"></div>
-				</div>
-				<div class = "ball" id = "ball_2">
-					<div class = "innerBall"></div>
-				</div>
-				<div class = "ball" id = "ball_3">
-					<div class = "innerBall"></div>
-				</div>
-				<div class = "ball" id = "ball_4">
-					<div class = "innerBall"></div>
-				</div>
-				<div class = "ball" id = "ball_5">
-					<div class = "innerBall"></div>
+				<div class="loader">
+					<div class="load-inner load-one"></div>
+					<div class="load-inner load-two"></div>
+					<div class="load-inner load-three"></div>
 				</div>
 			</div>
 		</div>
-	
+		
 		<div class="container">
 			<section class="background">
 				<div class="content-wrapper">
@@ -82,8 +71,8 @@
 		
 		<script>
 			$(window).on("load", function() {
-				$preloader = $(".loaderSection"),
-				$loader = $preloader.find(".loader");
+				var $preloader = $(".loaderSection");
+				var $loader = $preloader.find(".loader");
 				$loader.delay(1500).fadeOut("slow");
 				$preloader.delay(2000).fadeOut("slow");
 			});
