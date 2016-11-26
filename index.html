@@ -5,6 +5,7 @@
 		<meta charset = "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel = "short icon" href = "Images/icon.ico" type="image/x-icon">
+		<link rel = "stylesheet" href = "Style/loader.css">
 		<link rel = "stylesheet" href = "Style/style.css">
 		<link rel = "stylesheet" href = "Style/min_screen_style.css">
 		<link rel = "stylesheet" href = "Fonts/css/fontello.css">
@@ -12,6 +13,26 @@
 	</head>
 	
 	<body>
+		<div class = "loaderSection">
+			<div class = "loader">
+				<div class = "ball" id = "ball_1">
+					<div class = "innerBall"></div>
+				</div>
+				<div class = "ball" id = "ball_2">
+					<div class = "innerBall"></div>
+				</div>
+				<div class = "ball" id = "ball_3">
+					<div class = "innerBall"></div>
+				</div>
+				<div class = "ball" id = "ball_4">
+					<div class = "innerBall"></div>
+				</div>
+				<div class = "ball" id = "ball_5">
+					<div class = "innerBall"></div>
+				</div>
+			</div>
+		</div>
+	
 		<div class="container">
 			<section class="background">
 				<div class="content-wrapper">
@@ -58,4 +79,13 @@
 		<script src = "JavaScript/jquery-2.1.4.min.js"></script>
 		<script src = "JavaScript/lodash.min.js"></script>
 		<script src = "JavaScript/script.js"></script>	
+		
+		<script>
+			$(window).on("load", function() {
+				$preloader = $(".loaderSection"),
+				$loader = $preloader.find(".loader");
+				$loader.delay(1500).fadeOut("slow");
+				$preloader.delay(2000).fadeOut("slow");
+			});
+		</script>
 </html>

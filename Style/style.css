@@ -204,17 +204,3 @@ html, body {
 		    transform: translateY(15vh);
 }
 
-
-
-
-.background-mobile {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	overflow: hidden;
-	will-change: transform;
-	-webkit-backface-visibility: hidden;
-		    backface-visibility: hidden;
-	height: 130vh;
-	width: 100%;
-}
