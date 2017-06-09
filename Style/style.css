@@ -15,7 +15,8 @@ html, body {
 
 header,
 header #blackout,
-header #wallpaper {
+header #lower_wallpaper,
+header #upper_wallpaper {
 	position: absolute;
 	height: 600px;
 	width: 100%;
@@ -25,11 +26,19 @@ header {
 	position: relative;
 }
 
-header #wallpaper {
-	background: url("../Images/blur1.jpg");
+header #lower_wallpaper,
+header #upper_wallpaper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+}
+
+header #lower_wallpaper {
+	background-image: url(../Images/back.jpg);
+}
+
+header #upper_wallpaper {
+	background-image: url(../Images/blur3.jpg);
 }
 
 header #blackout {
