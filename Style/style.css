@@ -26,7 +26,7 @@ header {
 }
 
 header #wallpaper {
-	background: url("../Images/back.jpg");
+	background: url("../Images/blur1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
