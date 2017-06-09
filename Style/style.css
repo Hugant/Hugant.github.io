@@ -51,8 +51,8 @@ header #content {
 	left: 50%;
 	top: 50%;
 	width: 300px;
-	height: 325px;
-	margin-top: -162px;
+	height: 372px;
+	margin-top: -186px;
 	margin-left: -150px;
 }
 
@@ -67,13 +67,15 @@ header #content #image {
 	border-radius: 100px;
 }
 
-header #content #name {
+header #content #name,
+header #content #nickname {
 	text-align: center;
 	color: white;
 	font-family: arial;
 	font-weight: 100;
 	margin-top: 20px;
 }
+
 
 header #content #social {
 	text-align: center;
