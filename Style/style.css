@@ -38,7 +38,7 @@ header #lower_wallpaper {
 }
 
 header #upper_wallpaper {
-	background-image: url(../Images/blur3.jpg);
+	background-image: url(../Images/blur5.jpg);
 }
 
 header #blackout {
@@ -66,7 +66,7 @@ header #content #image {
 	margin: 0 auto;
 	border-radius: 100px;
 }
- 
+
 header #content #name,
 header #content #nickname {
 	text-align: center;
