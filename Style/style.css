@@ -91,6 +91,22 @@ header #content #social div i:hover {
 	color: #4078c0;
 }
 
+header #content #social #google_plus i:hover {
+	color: #db4437;
+}
+
+header #content #social #facebook i:hover {
+	color: #3b5998;
+}
+
+header #content #social #github i:hover {
+	color: #3a424a;
+}
+
+header #content #social #vk i:hover {
+	color: #507299;
+}
+
 header #content #social div {
 	display: inline-block;
 	width: 100px;
