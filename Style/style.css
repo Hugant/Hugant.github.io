@@ -30,13 +30,13 @@ header {
 
 header #lower_wallpaper,
 header #upper_wallpaper {
-	background-color: #6192B3;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
 
 header #lower_wallpaper {
+	background-color: #6192B3;
 	background-image: url(../Images/back.jpg);
 }
 
@@ -52,8 +52,8 @@ header #blackout {
 header #content {
 	position: absolute;
 	top: 50%;
-	height: 372px;
-	margin-top: -186px;
+	height: 452px;
+	margin-top: -226px;
 }
 
 header #content #image {
