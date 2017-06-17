@@ -8,12 +8,11 @@
 		<link rel = "stylesheet" href = "Style/style.css">
 		<link rel = "stylesheet" href = "Fonts/css/fontello.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="JavaScript/queryLoader.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('#upper_wallpaper').ready(function() {
-					$('#upper_wallpaper').fadeOut(3750);
-				});
-
+				location.href = "#";
+				
 				$('a[href^="#"]').click(function () {
 					destination = $($(this).attr("href")).offset().top;
 					$('#upper_wallpaper').stop();
@@ -29,22 +28,38 @@
 	</head>
 
 	<body>
-		<header id = "main">
-			<div id = "lower_wallpaper"></div>
-			<div id = "upper_wallpaper"></div>
-			<div id = "blackout"></div>
-			<div id = "content">
-				<div id = "info">
-					<div id = "image"></div>
-					<h1 id = "name">Миронов Даниил</h1>
-					<h2 id = "nickname">Hugant MD</h2>
-					<div id = "social">
-						<div id = "vk"><a href = "https://vk.com/hugant"><i class = "icon-vk"></i></a></div>
-						<div id = "github"><a href = "https://github.com/hugant"><i class = "icon-github"></i></a></div>
-						<div id = "facebook"><a href = "https://facebook.com/HugantMD"><i class = "icon-facebook"></i></a></div>
+		<div id = "wrapper">
+			<header id = "main">
+				<!-- <div id = "upper_wallpaper"></div> -->
+				<div id = "lower_wallpaper"></div>
+
+				<div id = "blackout"></div>
+				<div id = "content">
+					<div id = "info">
+						<div id = "image"></div>
+						<h1 id = "name">Миронов Даниил</h1>
+						<h2 id = "nickname">Hugant MD</h2>
+						<div id = "social">
+							<div id = "vk"><a href = "https://vk.com/hugant"><i class = "icon-vk"></i></a></div>
+							<div id = "github"><a href = "https://github.com/hugant"><i class = "icon-github"></i></a></div>
+							<div id = "facebook"><a href = "https://facebook.com/HugantMD"><i class = "icon-facebook"></i></a></div>
+							<div id = "mail"><a target = "_target" href = "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hugantmirron@gmail.com"><i class = "icon-mail-alt"></i></a></div>
+						</div>
+					</div>
+
+					<div id = "menu">
+						<div><a href = "#main">Main</a></div>
+						<div><a href = "#information">Information</a></div>
+						<div><a href = "#portfolio">Portfolio</a></div>
+						<div><a href = "#about">About me</a></div>
+						<div><a href = "#contact">Contact</a></div>
 					</div>
 				</div>
 
+			</header>
+
+			<div class="separator"></div>
+			<section id = "information">
 				<div id = "menu">
 					<div><a href = "#main">Main</a></div>
 					<div><a href = "#information">Information</a></div>
@@ -52,57 +67,49 @@
 					<div><a href = "#about">About me</a></div>
 					<div><a href = "#contact">Contact</a></div>
 				</div>
-			</div>
+			</section>
 
-		</header>
+			<div class="separator"></div>
+			<section id = "portfolio">
+				<div id = "menu">
+					<div><a href = "#main">Main</a></div>
+					<div><a href = "#information">Information</a></div>
+					<div><a href = "#portfolio">Portfolio</a></div>
+					<div><a href = "#about">About me</a></div>
+					<div><a href = "#contact">Contact</a></div>
+				</div>
+			</section>
 
-		<div class="separator"></div>
-		<section id = "information">
-			<div id = "menu">
-				<div><a href = "#main">Main</a></div>
-				<div><a href = "#information">Information</a></div>
-				<div><a href = "#portfolio">Portfolio</a></div>
-				<div><a href = "#about">About me</a></div>
-				<div><a href = "#contact">Contact</a></div>
-			</div>
-		</section>
+			<div class="separator"></div>
+			<section id = "about">
+				<div id = "menu">
+					<div><a href = "#main">Main</a></div>
+					<div><a href = "#information">Information</a></div>
+					<div><a href = "#portfolio">Portfolio</a></div>
+					<div><a href = "#about">About me</a></div>
+					<div><a href = "#contact">Contact</a></div>
+				</div>
+			</section>
 
-		<div class="separator"></div>
-		<section id = "portfolio">
-			<div id = "menu">
-				<div><a href = "#main">Main</a></div>
-				<div><a href = "#information">Information</a></div>
-				<div><a href = "#portfolio">Portfolio</a></div>
-				<div><a href = "#about">About me</a></div>
-				<div><a href = "#contact">Contact</a></div>
-			</div>
-		</section>
+			<div class="separator"></div>
+			<section id = "contact">
+				<div id = "menu">
+					<div><a href = "#main">Main</a></div>
+					<div><a href = "#information">Information</a></div>
+					<div><a href = "#portfolio">Portfolio</a></div>
+					<div><a href = "#about">About me</a></div>
+					<div><a href = "#contact">Contact</a></div>
+				</div>
+			</section>
 
-		<div class="separator"></div>
-		<section id = "about">
-			<div id = "menu">
-				<div><a href = "#main">Main</a></div>
-				<div><a href = "#information">Information</a></div>
-				<div><a href = "#portfolio">Portfolio</a></div>
-				<div><a href = "#about">About me</a></div>
-				<div><a href = "#contact">Contact</a></div>
-			</div>
-		</section>
+			<footer>
 
-		<div class="separator"></div>
-		<section id = "contact">
-			<div id = "menu">
-				<div><a href = "#main">Main</a></div>
-				<div><a href = "#information">Information</a></div>
-				<div><a href = "#portfolio">Portfolio</a></div>
-				<div><a href = "#about">About me</a></div>
-				<div><a href = "#contact">Contact</a></div>
-			</div>
-		</section>
-
-		<footer>
-
-		</footer>
+			</footer>
+		</div>
 	</body>
+	<script>
+		QueryLoader.selectorPreload = "body";
+		QueryLoader.init();
+	</script>
 	<script src = "JavaScript/script.js"></script>
 </html>

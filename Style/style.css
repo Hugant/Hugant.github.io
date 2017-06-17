@@ -10,6 +10,11 @@ html, body {
 	-ms-user-select: none;
 	cursor: default;
 	overflow: hidden;
+	background-color: #000000;
+}
+
+#wrapper {
+	display: none;
 }
 
 /********************** HEADER */
@@ -36,7 +41,6 @@ header #upper_wallpaper {
 }
 
 header #lower_wallpaper {
-	background-color: #6192B3;
 	background-image: url(../Images/back.jpg);
 }
 
@@ -160,4 +164,16 @@ footer {
 #menu .active {
 	height: 29px;
 	border-bottom: 1px solid white;
+}
+
+/********************** QYERYLOADER */
+
+.QOverlay {
+	background-color: #000000;
+	z-index: 9999;
+}
+
+.QLoader {
+	background-color: #666666;
+	height: 1px;
 }
