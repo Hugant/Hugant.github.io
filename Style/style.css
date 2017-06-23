@@ -22,8 +22,7 @@ html, body {
 header,
 header #content,
 header #blackout,
-header #lower_wallpaper,
-header #upper_wallpaper {
+header #wallpaper {
 	position: absolute;
 	height: 100vh;
 	width: 100%;
@@ -33,19 +32,11 @@ header {
 	position: relative;
 }
 
-header #lower_wallpaper,
-header #upper_wallpaper {
+header #wallpaper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-}
-
-header #lower_wallpaper {
 	background-image: url(../Images/back.jpg);
-}
-
-header #upper_wallpaper {
-	background-image: url(../Images/blur5.jpg);
 }
 
 header #blackout {
@@ -144,13 +135,90 @@ header #content #social div {
 
 /********************** SECTION */
 
-section {
+section,
+section #content,
+section #blackout,
+section #wallpaper{
+	position: absolute;
 	height: 100vh;
+	width: 100%;
+}
+
+section {
 	position: relative;
-	background-image: url(../Images/back.jpg);
+}
+
+/***** ABOUT */
+#about #wallpaper {
+	background-image: url(../Images/hug.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+}
+
+#about #blackout {
+	background: black;
+	opacity: 0.4;
+}
+
+#about #content {
+	height: 80vh;
+	width: 40%;
+	margin-top: 8vh;
+	margin-left: 10%;
+}
+
+#about #content #info {
+	height: 80vh;
+	width: 40%;
+	/*padding: 10px;*/
+}
+
+#about #content #info #lining,
+#about #content #info #text {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*padding: 10px;*/
+}
+
+#about #content #info #lining {
+	background: white;
+	opacity: 0.5;
+	border-radius: 20px;
+}
+
+#about #content #info #text {
+
+}
+
+#about #content #info #text p {
+	width: 30px;
+}
+
+#about #menu {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+#about #menu div {
+	display: inline-block;
+	height: 30px;
+}
+
+#about #menu div a {
+	color: white;
+	line-height: 30px;
+	margin: 0 10px;
+	font-family: arial;
+	text-decoration: none;
+}
+
+#about #menu div:hover {
+	height: 29px;
+	border-bottom: 1px solid white;
 }
 
 /********************** FOOTER */

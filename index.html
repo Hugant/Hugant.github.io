@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				location.href = "#";
-				
+
 				$('a[href^="#"]').click(function () {
 					destination = $($(this).attr("href")).offset().top;
 					$('#upper_wallpaper').stop();
@@ -30,9 +30,7 @@
 	<body>
 		<div id = "wrapper">
 			<header id = "main">
-				<!-- <div id = "upper_wallpaper"></div> -->
-				<div id = "lower_wallpaper"></div>
-
+				<div id = "wallpaper"></div>
 				<div id = "blackout"></div>
 				<div id = "content">
 					<div id = "info">
@@ -49,56 +47,42 @@
 
 					<div id = "menu">
 						<div><a href = "#main">Main</a></div>
-						<div><a href = "#information">Information</a></div>
-						<div><a href = "#portfolio">Portfolio</a></div>
 						<div><a href = "#about">About me</a></div>
-						<div><a href = "#contact">Contact</a></div>
+						<div><a href = "#portfolio">Portfolio</a></div>
 					</div>
 				</div>
 
 			</header>
 
 			<div class="separator"></div>
-			<section id = "information">
-				<div id = "menu">
-					<div><a href = "#main">Main</a></div>
-					<div><a href = "#information">Information</a></div>
-					<div><a href = "#portfolio">Portfolio</a></div>
-					<div><a href = "#about">About me</a></div>
-					<div><a href = "#contact">Contact</a></div>
+			<section id = "about">
+				<div id = "wallpaper"></div>
+				<div id = "blackout"></div>
+				<div id = "content">
+					<div id = "info">
+						<div id = "lining"></div>
+						<div id = "text">
+							<p>SomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeText</p>
+						</div>
+
+					</div>
+
+					<div id = "menu">
+						<div><a href = "#main">Main</a></div>
+						<div><a href = "#about">About me</a></div>
+						<div><a href = "#portfolio">Portfolio</a></div>
+					</div>
 				</div>
+
+
 			</section>
 
 			<div class="separator"></div>
 			<section id = "portfolio">
 				<div id = "menu">
 					<div><a href = "#main">Main</a></div>
-					<div><a href = "#information">Information</a></div>
-					<div><a href = "#portfolio">Portfolio</a></div>
 					<div><a href = "#about">About me</a></div>
-					<div><a href = "#contact">Contact</a></div>
-				</div>
-			</section>
-
-			<div class="separator"></div>
-			<section id = "about">
-				<div id = "menu">
-					<div><a href = "#main">Main</a></div>
-					<div><a href = "#information">Information</a></div>
 					<div><a href = "#portfolio">Portfolio</a></div>
-					<div><a href = "#about">About me</a></div>
-					<div><a href = "#contact">Contact</a></div>
-				</div>
-			</section>
-
-			<div class="separator"></div>
-			<section id = "contact">
-				<div id = "menu">
-					<div><a href = "#main">Main</a></div>
-					<div><a href = "#information">Information</a></div>
-					<div><a href = "#portfolio">Portfolio</a></div>
-					<div><a href = "#about">About me</a></div>
-					<div><a href = "#contact">Contact</a></div>
 				</div>
 			</section>
 
