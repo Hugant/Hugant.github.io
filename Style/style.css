@@ -163,9 +163,10 @@ section {
 
 #about #content {
 	height: 80vh;
-	width: 40%;
+	width: 50%;
 	margin-top: 8vh;
-	margin-left: 10%;
+	margin-left: 5%;
+	min-width: 500px;
 }
 
 #about #content #info {
