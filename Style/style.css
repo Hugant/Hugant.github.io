@@ -170,8 +170,6 @@ section {
 
 #about #content #info {
 	height: 80vh;
-	width: 40%;
-	/*padding: 10px;*/
 }
 
 #about #content #info #lining,
@@ -179,28 +177,46 @@ section {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	/*padding: 10px;*/
 }
 
 #about #content #info #lining {
 	background: white;
 	opacity: 0.5;
 	border-radius: 20px;
+	padding: 5px;
 }
 
 #about #content #info #text {
-
+	overflow-y: auto;
+	word-wrap: break-word;
 }
 
 #about #content #info #text p {
-	width: 30px;
+	padding: 0 10px 0 20px;
+}
+
+#about #content #info #text h1 {
+	padding: 10px;
+}
+
+#about #content #info #text::-webkit-scrollbar {
+    width: 5px;
+}
+
+#about #content #info #text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(130, 130, 130);
+}
+
+#about #content #info #text::-webkit-scrollbar-track {
+	margin:10px;
 }
 
 #about #menu {
 	position: relative;
 	width: 100%;
 	text-align: center;
-	margin-top: 2vh;
+	margin-top: 4vh;
 }
 
 #about #menu div {
