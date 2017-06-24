@@ -12,10 +12,17 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				location.href = "#";
-
+				var currentSlide = $('#main');
+				
+				window.onresize = function() {
+					destination = currentSlide.offset().top;
+					$('body, html').animate({ scrollTop: destination }, 0);
+					console.log(destination);
+				}
+			
 				$('a[href^="#"]').click(function () {
-					destination = $($(this).attr("href")).offset().top;
-					$('#upper_wallpaper').stop();
+					currentSlide = $($(this).attr('href'));
+					destination = currentSlide.offset().top;
 					$('body,html').animate({ scrollTop: destination }, 1000);
 					setTimeout(function() {
 						$('#upper_wallpaper').css("opacity", 0);
