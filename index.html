@@ -12,8 +12,8 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				location.href = "#";
-				var currentSlide = $('#main');
-				
+				let currentSlide = $('#main');
+
 				window.onresize = function() {
 					destination = currentSlide.offset().top;
 					$('body, html').animate({ scrollTop: destination }, 0);
