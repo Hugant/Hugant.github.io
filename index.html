@@ -17,16 +17,12 @@
 				window.onresize = function() {
 					destination = currentSlide.offset().top;
 					$('body, html').animate({ scrollTop: destination }, 0);
-					console.log(destination);
 				}
-			
+
 				$('a[href^="#"]').click(function () {
 					currentSlide = $($(this).attr('href'));
 					destination = currentSlide.offset().top;
 					$('body,html').animate({ scrollTop: destination }, 1000);
-					setTimeout(function() {
-						$('#upper_wallpaper').css("opacity", 0);
-					}, 1000);
 
 					return false;
 				});
