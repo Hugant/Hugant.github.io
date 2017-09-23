@@ -115,20 +115,18 @@ header #content #social div {
 	margin-top: 40px;
 }
 
-#menu div {
+#menu a {
 	display: inline-block;
 	height: 30px;
-}
-
-#menu div a {
+	padding: 0 10px 0 10px;
 	color: white;
 	line-height: 30px;
-	margin: 0 10px;
+	margin: 0 0px;
 	font-family: arial;
 	text-decoration: none;
 }
 
-#menu div:hover {
+#menu a:hover {
 	height: 29px;
 	border-bottom: 1px solid white;
 }
