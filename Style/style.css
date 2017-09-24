@@ -311,15 +311,6 @@ section {
 	-webkit-filter: blur(3px);
 }
 
-/*#portfolio #jsDays_target:target #slide_menu .icon,
-#portfolio #starclipse_target:target #slide_menu .icon {
-	/*-webkit-transform: scale(.8);
-	   -moz-transform: scale(.8);
-	     -o-transform: scale(.8);
-		 	transform: scale(.8);
-	transition-delay: .25s;
-}*/
-
 #portfolio #jsDays_target:target #jsDays_icon,
 #portfolio #starclipse_target:target #starclipse_icon {
 	-webkit-transform: scale(1.4) !important;
