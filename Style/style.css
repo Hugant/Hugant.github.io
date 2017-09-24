@@ -294,7 +294,7 @@ section {
 }
 
 #portfolio #starclipse {
-	background: rebeccapurple;
+	background: #141617;
 }
 
 #portfolio #jsDays_target:target #jsDays,
@@ -342,9 +342,29 @@ section {
 	transition-delay: 1s;
 }
 
-.slide {
-	text-align: center;
+.slide .title {
+	margin-top: 100px;
+	margin-left: 100px;
+	height: 100px;
+}
+.slide h1 {
 	color: white;
+	font-family: "Oswald", sans-serif;
+	font-size: 40pt;
+	font-weight: bold;
+	letter-spacing: 100;
+}
+#home h1 span {
+	color: #fd4747;
+}
+
+#jsDays h1 span {
+	color: #673ab7;
+}
+
+#starclipse h1 span {
+	color: #d41d1d;
+	border-bottom: 3px solid white;
 }
 
 /********************** FOOTER */
