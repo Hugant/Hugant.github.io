@@ -19,7 +19,7 @@
 					$('body, html').animate({ scrollTop: destination }, 0);
 				}
 
-				$('a[href^="#"]').click(function () {
+				$('#menu a[href^="#"]').click(function () {
 					currentSlide = $($(this).attr('href'));
 					destination = currentSlide.offset().top;
 					$('body,html').animate({ scrollTop: destination }, 1000);
@@ -81,12 +81,40 @@
 						<div><a href = "#portfolio">Portfolio</a></div>
 					</div>
 				</div>
-
-
 			</section>
 
 			<div class="separator"></div>
 			<section id = "portfolio">
+				<div id = "home_target">
+					<div id = "jsDays_target">
+						<div id = "starclipse_target">
+							<ul id = "slide_menu">
+								<a href = "#home_target"><li id = "home_icon" class = "icon icon-home"></li></a>
+								<a href = "#jsDays_target"><li id = "jsDays_icon" class = "icon icon-code"></li></a>
+								<a href = "#starclipse_target"><li id = "starclipse_icon" class = "icon icon-rocket"></li></a>
+							</ul>
+
+							<div class = "slide" id = "home">
+								<section class = "content">
+									<h1>Start slide</h1>
+								</section>
+							</div>
+
+							<div class = "slide" id = "jsDays">
+								<section class = "content">
+									<h1>100js slide</h1>
+								</section>
+							</div>
+
+							<div class = "slide" id = "starclipse">
+								<section class = "content">
+									<h1>Starclipse slide</h1>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div id = "menu">
 					<div><a href = "#main">Main</a></div>
 					<div><a href = "#about">About me</a></div>

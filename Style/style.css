@@ -236,6 +236,126 @@ section {
 	border-bottom: 1px solid white;
 }
 
+/********************** PORTFOLIO */
+
+#portfolio .slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	-webkit-transition: all .6s linear;
+	   -moz-transition: all .6s linear;
+		 -o-transition: all .6s linear;
+		 	transition: all .6s linear;
+}
+
+#portfolio #slide_menu {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	height: 186px;
+	width: 10%;
+	margin-top: -96px;
+	text-align: center;
+	list-style: none;
+	z-index: 1;
+}
+
+#portfolio #slide_menu a {
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+#portfolio #slide_menu .icon {
+	display: block;
+	color: white;
+	font-size: 32px;
+	-webkit-transition: all .3s ease-out;
+	   -moz-transition: all .3s ease-out;
+		 -o-transition: all .3s ease-out;
+		 	transition: all .3s ease-out;
+}
+
+#portfolio #slide_menu .icon:hover {
+	color: darkgray;
+}
+
+#portfolio #home {
+	left: 0;
+}
+
+#portfolio #jsDays,
+#portfolio #starclipse {
+	left: -200%;
+}
+
+#portfolio #jsDays {
+	background: tomato;
+}
+
+#portfolio #starclipse {
+	background: rebeccapurple;
+}
+
+#portfolio #jsDays_target:target #jsDays,
+#portfolio #starclipse_target:target #starclipse {
+	-webkit-transform: translateX(200%);
+	   -moz-transform: translateX(200%);
+	   	 -o-transform: translateX(200%);
+		 	transform: translateX(200%);
+	transition-delay: .4s !important;
+}
+
+#portfolio #jsDays_target:target #home,
+#portfolio #starclipse_target:target #home {
+	-webkit-filter: blur(3px);
+}
+
+/*#portfolio #jsDays_target:target #slide_menu .icon,
+#portfolio #starclipse_target:target #slide_menu .icon {
+	/*-webkit-transform: scale(.8);
+	   -moz-transform: scale(.8);
+	     -o-transform: scale(.8);
+		 	transform: scale(.8);
+	transition-delay: .25s;
+}*/
+
+#portfolio #jsDays_target:target #jsDays_icon,
+#portfolio #starclipse_target:target #starclipse_icon {
+	-webkit-transform: scale(1.4) !important;
+	   -moz-transform: scale(1.4) !important;
+	     -o-transform: scale(1.4) !important;
+		 	transform: scale(1.4) !important;
+}
+
+.slide .content {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	-webkit-transform: translateX(20px);
+	   -moz-transform: translateX(20px);
+	   	 -o-transform: translateX(20px);
+		 	transform: translateX(20px);
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+	   	 -o-transition: all .4s ease-in-out;
+		 	transition: all .4s ease-in-out;
+}
+
+#portfolio #jsDays_target:target .slide#jsDays .content,
+#portfolio #starclipse_target:target .slide#starclipse .content {
+	-webkit-transform: translateX(0) !important;
+	   -moz-transform: translateX(0) !important;
+		 -o-transform: translateX(0) !important;
+		 	transform: translateX(0) !important;
+	transition-delay: 1s;
+}
+
+.slide {
+	text-align: center;
+	color: white;
+}
+
 /********************** FOOTER */
 
 footer {
@@ -244,10 +364,10 @@ footer {
 
 /********************** COMMON */
 
-#menu .active {
+/*.main:target {
 	height: 29px;
 	border-bottom: 1px solid white;
-}
+}*/
 
 /********************** QYERYLOADER */
 
