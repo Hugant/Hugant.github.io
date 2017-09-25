@@ -37,6 +37,7 @@ header #wallpaper {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-image: url(../Images/back.jpg);
+	-webkit-filter: blur(2px);
 }
 
 header #blackout {
@@ -60,6 +61,7 @@ header #content #image {
 	height: 200px;
 	margin: 0 auto;
 	border-radius: 100px;
+	border: 3px solid white;
 }
 
 header #content #name,
@@ -237,6 +239,8 @@ section {
 }
 
 /********************** PORTFOLIO */
+
+
 
 #portfolio .slide {
 	width: 100%;
