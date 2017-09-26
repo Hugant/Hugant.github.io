@@ -1,155 +1,132 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hugant Mirron</title>
-		<meta charset = "utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel = "short icon" href = "Images/icon.ico" type="image/x-icon">
-		<link rel = "stylesheet" href = "Style/style.css">
-		<link rel = "stylesheet" href = "Fonts/css/fontello.css">
-		<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="JavaScript/queryLoader.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				location.href = "#";
-				let currentSlide = $('#main');
 
-				window.onresize = function() {
-					destination = currentSlide.offset().top;
-					$('body, html').animate({ scrollTop: destination }, 0);
-				}
+<title>Hugant Mirron</title>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel = "icon" href = "Images/icon.ico" type="image/x-icon">
+<link rel = "stylesheet" href = "Style/style.css">
+<link rel = "stylesheet" href = "Fonts/css/fontello.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500" >
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="JavaScript/queryLoader.js"></script>
+<script>
+	// $(document).ready(function() {
+	// 	location.href = "#";
+	// 	let currentSlide = $('#main');
+	//
+	// 	window.onresize = function() {
+	// 		destination = currentSlide.offset().top;
+	// 		$('body, html').animate({ scrollTop: destination }, 0);
+	// 	}
+	//
+	// 	$('#menu a[href^="#"]').click(function () {
+	// 		currentSlide = $($(this).attr('href'));
+	// 		destination = currentSlide.offset().top;
+	// 		$('body,html').animate({ scrollTop: destination }, 1000);
+	//
+	// 		return false;
+	// 	});
+	// });
+ </script>
 
-				$('#menu a[href^="#"]').click(function () {
-					currentSlide = $($(this).attr('href'));
-					destination = currentSlide.offset().top;
-					$('body,html').animate({ scrollTop: destination }, 1000);
-
-					return false;
-				});
-			});
-		 </script>
-	</head>
-
-	<body>
-		<div id = "wrapper">
-			<!-- <div id = "t_home">
-				<div id = "t_about">
-					<div id = "t_portfolio1">
-						<div id = ""
-					</div>
+<div id = "wrapper">
+	<div id = "t-home">
+		<div id = "home" class = "page">
+			<div id = "wallpaper"></div>
+			<div id = "blackout"></div>
+			<div id = "content">
+				<div id = "image"></div>
+				<h1 id = "name">Миронов Даниил</h1>
+				<h2 id = "nickname">Hugant Mirron</h2>
+				<div id = "social">
+					<div id = "vk"><a href = "https://vk.com/hugant"><i class = "icon-vk"></i></a></div>
+					<div id = "github"><a href = "https://github.com/hugant"><i class = "icon-github"></i></a></div>
+					<div id = "facebook"><a href = "https://facebook.com/HugantMD"><i class = "icon-facebook"></i></a></div>
+					<div id = "mail"><a target = "target" href = "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hugantmirron@gmail.com"><i class = "icon-mail-alt"></i></a></div>
 				</div>
-			</div> -->
-
-
-
-
-
-			<header id = "main">
-				<div id = "wallpaper"></div>
-				<div id = "blackout"></div>
-				<div id = "content">
-					<div id = "info">
-						<div id = "image"></div>
-						<h1 id = "name">Миронов Даниил</h1>
-						<h2 id = "nickname">Hugant Mirron</h2>
-						<div id = "social">
-							<div id = "vk"><a href = "https://vk.com/hugant"><i class = "icon-vk"></i></a></div>
-							<div id = "github"><a href = "https://github.com/hugant"><i class = "icon-github"></i></a></div>
-							<div id = "facebook"><a href = "https://facebook.com/HugantMD"><i class = "icon-facebook"></i></a></div>
-							<div id = "mail"><a target = "_target" href = "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hugantmirron@gmail.com"><i class = "icon-mail-alt"></i></a></div>
-						</div>
-					</div>
-
-					<div id = "menu">
-						<a href = "#main">Main</a>
-						<a href = "#about">About me</a>
-						<a href = "#portfolio">Portfolio</a>
-					</div>
-				</div>
-
-			</header>
-
-			<div class="separator"></div>
-			<section id = "about">
-				<div id = "wallpaper"></div>
-				<div id = "blackout"></div>
-				<div id = "content">
-					<div id = "info">
-						<div id = "lining"></div>
-						<div id = "text">
-							<h1>За словесными горами</h1>
-							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель</p>
-							<h1>Страдания юного Вертера</h1>
-							<p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!" Друг</p>
-							<h1>Кафка</h1>
-							<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем	</p>
-						</div>
-
-					</div>
-
-					<div id = "menu">
-						<div><a href = "#main">Main</a></div>
-						<div><a href = "#about">About me</a></div>
-						<div><a href = "#portfolio">Portfolio</a></div>
-					</div>
-				</div>
-			</section>
-
-			<div class="separator"></div>
-			<section id = "portfolio">
-				<div id = "home_target"></div>
-
-
-				<ul id = "slide_menu">
-					<li id = "home_icon" class = "icon icon-home"></li>
-					<a href = "#jsDays_target"><li id = "jsDays_icon" class = "icon icon-code"></li></a>
-					<a href = "#starclipse_target"><li id = "starclipse_icon" class = "icon icon-rocket" onclick = "$('#starclipse').addClass('test')"></li></a>
-				</ul>
-
-				<div class = "slide" id = "home">
-					<section class = "content">
-						<div class = "title">
-							<h1><span>МОЕ</span><br>ПОРТФОЛИО</h1>
-						</div>
-					</section>
-				</div>
-
-				<div id = "jsDays_target">
-					<div class = "slide" id = "jsDays">
-						<section class = "content">
-							<div class = "title">
-								<h1>100<br>DAYS OF<br><span>JAVASCRIPT<span></h1>
-							</div>
-						</section>
-					</div>
-				</div>
-				<div id = "starclipse_target">
-					<div class = "slide" id = "starclipse">
-						<section class = "content">
-							<div class = "title">
-								<h1><span>Star</span>clipse</h1>
-							</div>
-						</section>
-					</div>
-				</div>
-
-
-				<div id = "menu">
-					<div><a href = "#main">Main</a></div>
-					<div><a href = "#about">About me</a></div>
-					<div><a href = "#portfolio">Portfolio</a></div>
-				</div>
-			</section>
-
-			<footer>
-
-			</footer>
+			</div>
 		</div>
-	</body>
-	<script>
-		QueryLoader.selectorPreload = "body";
-		QueryLoader.init();
-	</script>
-	<script src = "JavaScript/script.js"></script>
-</html>
+	</div>
+
+	<div id = "t-about">
+		<div id = "about" class = "page">
+
+		</div>
+	</div>
+
+	<div id = "t-prj1">
+		<div id = "prj1" class = "page">
+
+		</div>
+	</div>
+
+	<div id = "t-prj2">
+		<div id = "prj2" class = "page">
+
+		</div>
+	</div>
+
+	<div id = "t-library">
+		<div id = "library" class = "page">
+
+		</div>
+	</div>
+
+	<ul id = "menu">
+		<li id = "home-icon">       <a href = "#t-home"><i></i></a>
+		<li id = "about-icon">      <a href = "#t-about"><i></i></a>
+		<li id = "portfolio1-icon"> <a href = "#t-portfolio1"><i></i></a>
+		<li id = "portfolio2-icon"> <a href = "#t-portfolio2"><i></i></a>
+		<li id = "library-icon">    <a href = "#t-library"><i></i></a>
+	</ul>
+
+		<!-- <ul id = "slide_menu">
+			<li id = "home_icon" class = "icon icon-home"></li>
+			<a href = "#jsDays_target"><li id = "jsDays_icon" class = "icon icon-code"></li></a>
+			<a href = "#starclipse_target"><li id = "starclipse_icon" class = "icon icon-rocket" onclick = "$('#starclipse').addClass('test')"></li></a>
+		</ul>
+
+		<div class = "slide" id = "home">
+			<section class = "content">
+				<div class = "title">
+					<h1><span>МОЕ</span><br>ПОРТФОЛИО</h1>
+				</div>
+			</section>
+		</div>
+
+		<div id = "jsDays_target">
+			<div class = "slide" id = "jsDays">
+				<section class = "content">
+					<div class = "title">
+						<h1>100<br>DAYS OF<br><span>JAVASCRIPT<span></h1>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div id = "starclipse_target">
+			<div class = "slide" id = "starclipse">
+				<section class = "content">
+					<div class = "title">
+						<h1><span>Star</span>clipse</h1>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<div id = "menu">
+			<div><a href = "#main">Main</a></div>
+			<div><a href = "#about">About me</a></div>
+			<div><a href = "#portfolio">Portfolio</a></div>
+		</div>
+	</section>
+
+	<footer>
+
+	</footer> -->
+</div>
+<script>
+	QueryLoader.selectorPreload = "body";
+	QueryLoader.init();
+</script>
+<script src = "JavaScript/script.js"></script>

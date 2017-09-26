@@ -10,53 +10,50 @@ html, body {
 	-ms-user-select: none;
 	cursor: default;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #000;
 }
 
 #wrapper {
 	display: none;
 }
 
-/********************** HEADER */
+/********************** HOME */
 
-header,
-header #content,
-header #blackout,
-header #wallpaper {
+#home {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+#home #content,
+#home #blackout,
+#home #wallpaper {
 	position: absolute;
 	height: 100vh;
 	width: 100%;
 }
 
-header {
-	position: relative;
-}
-
-header #wallpaper {
+#home #wallpaper {
+  background: url(../Images/back.jpg) center bottom no-repeat;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-image: url(../Images/back.jpg);
 	-webkit-filter: blur(2px);
 }
 
-header #blackout {
+#home #blackout {
 	background: black;
 	opacity: 0.4;
 }
 
-header #content {
+#home #content {
 	position: absolute;
 	top: 50%;
 	height: 452px;
-	margin-top: -226px;
+	margin: -226px 0 0 0;
 }
 
-header #content #image {
-	background: url("../Images/hugant.jpg");
+#home #content #image {
+	background: url(../Images/hugant.jpg) center center no-repeat;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;
@@ -64,8 +61,8 @@ header #content #image {
 	border: 3px solid white;
 }
 
-header #content #name,
-header #content #nickname {
+#home #content #name,
+#home #content #nickname {
 	text-align: center;
 	color: white;
 	font-family: arial;
@@ -74,66 +71,43 @@ header #content #nickname {
 }
 
 
-header #content #social {
+#home #content #social {
 	text-align: center;
-	margin-top: 20px;
+	margin: 20px 0 0 0;
 }
 
-header #content #social a {
+#home #content #social a {
 	text-decoration: none;
 	color: white;
 }
 
-header #content #social div i:hover {
+#home #content #social div i:hover {
 	color: #4078c0;
 }
 
-header #content #social #mail i:hover {
+#home #content #social #mail i:hover {
 	color: #db4437;
 }
 
-header #content #social #facebook i:hover {
+#home #content #social #facebook i:hover {
 	color: #3b5998;
 }
 
-header #content #social #github i:hover {
+#home #content #social #github i:hover {
 	color: #3a424a;
 }
 
-header #content #social #vk i:hover {
+#home #content #social #vk i:hover {
 	color: #507299;
 }
 
-header #content #social div {
+#home #content #social div {
 	display: inline-block;
 	width: 100px;
 	font-size: 2.5em;
 }
 
-#menu {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	margin-top: 40px;
-}
-
-#menu a {
-	display: inline-block;
-	height: 30px;
-	padding: 0 10px 0 10px;
-	color: white;
-	line-height: 30px;
-	margin: 0 0px;
-	font-family: arial;
-	text-decoration: none;
-}
-
-#menu a:hover {
-	height: 29px;
-	border-bottom: 1px solid white;
-}
-
-/********************** SECTION */
+/********************** ABOUT */
 
 section,
 section #content,
@@ -298,7 +272,7 @@ section {
 }
 
 #portfolio #starclipse {
-	background: #141617;
+  background: #141617;
 }
 
 #portfolio #jsDays_target:target #jsDays,
@@ -387,11 +361,11 @@ footer {
 /********************** QYERYLOADER */
 
 .QOverlay {
-	background-color: #000000;
+	background-color: #000;
 	z-index: 9999;
 }
 
 .QLoader {
-	background-color: #666666;
+	background-color: #666;
 	height: 1px;
 }
