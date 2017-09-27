@@ -2,7 +2,7 @@
 
 <title>Hugant Mirron</title>
 <meta charset = "utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel = "icon" href = "Images/icon.ico" type="image/x-icon">
 <link rel = "stylesheet" href = "Style/style.css">
 <link rel = "stylesheet" href = "Fonts/css/fontello.css">
@@ -10,26 +10,24 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="JavaScript/queryLoader2.min.js"></script>
 <script>
-	// $(document).ready(function() {
-	// 	location.href = "#";
-	// 	let currentSlide = $('#main');
-	//
-	// 	window.onresize = function() {
-	// 		destination = currentSlide.offset().top;
-	// 		$('body, html').animate({ scrollTop: destination }, 0);
-	// 	}
-	//
-	// 	$('#menu a[href^="#"]').click(function () {
-	// 		currentSlide = $($(this).attr('href'));
-	// 		destination = currentSlide.offset().top;
-	// 		$('body,html').animate({ scrollTop: destination }, 1000);
-	//
-	// 		return false;
-	// 	});
-	// });
+  $(document).ready(function() {
+    location.href = "#t-home";
+
+    $("#menu a").on("click", function() {
+      $("#menu a").removeClass("big default");
+      $("#menu a").addClass("small");
+      $(this).addClass("big");
+      $("#home .content").addClass("blur");
+    });
+
+    $("#home-icon").click(function() {
+      $("#menu a").removeClass("big small");
+      $("#menu a").addClass("default");
+      $("#home .content").removeClass("blur");
+    });
+  });
  </script>
 
-<div id = "wrapper">
  <script>
     window.addEventListener('DOMContentLoaded', function() {
         QueryLoader2(document.querySelector("body"), {
@@ -42,103 +40,64 @@
         });
     });
 </script>
-	<div id = "t-home">
-		<div id = "home" class = "page">
-			<div id = "wallpaper"></div>
-			<div id = "blackout"></div>
-			<div id = "content">
-				<div id = "image"></div>
-				<h1 id = "name">Миронов Даниил</h1>
-				<h2 id = "nickname">Hugant Mirron</h2>
-				<div id = "social">
-					<div id = "vk"><a href = "https://vk.com/hugant"><i class = "icon-vk"></i></a></div>
-					<div id = "github"><a href = "https://github.com/hugant"><i class = "icon-github"></i></a></div>
-					<div id = "facebook"><a href = "https://facebook.com/HugantMD"><i class = "icon-facebook"></i></a></div>
-					<div id = "mail"><a target = "target" href = "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hugantmirron@gmail.com"><i class = "icon-mail-alt"></i></a></div>
-				</div>
+
+
+<ul id = "menu">
+	<li> <a href = "#t-home"    id = "home-icon"    class = "icon-home"></a>
+	<li> <a href = "#t-about"   id = "about-icon"   class = "icon-about"></a>
+	<li> <a href = "#t-prj-1"   id = "prj-1-icon"   class = "icon-code"></a>
+	<li> <a href = "#t-prj-2"   id = "prj-2-icon"   class = "icon-rocket"></a>
+	<li> <a href = "#t-library" id = "library-icon" class = "icon-book"></a>
+</ul>
+
+<div id = "t-home">
+	<div id = "home" class = "page">
+		<div class = "wallpaper"></div>
+		<div class = "blackout"></div>
+		<div class = "content">
+			<div id = "image"></div>
+			<h1 id = "name">Миронов Даниил</h1>
+			<h2 id = "nickname">Hugant Mirron</h2>
+			<div id = "social">
+				<a href = "https://vk.com/hugant" class = "icon-vk"></a>
+				<a href = "https://github.com/hugant" class = "icon-github"></a>
+				<a href = "https://facebook.com/HugantMD" class = "icon-facebook"></a>
+				<a href = "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=hugantmirron@gmail.com" target = "target" class = "icon-mail-alt"></a>
 			</div>
 		</div>
 	</div>
-
-	<div id = "t-about">
-		<div id = "about" class = "page">
-
-		</div>
-	</div>
-
-	<div id = "t-prj1">
-		<div id = "prj1" class = "page">
-
-		</div>
-	</div>
-
-	<div id = "t-prj2">
-		<div id = "prj2" class = "page">
-
-		</div>
-	</div>
-
-	<div id = "t-library">
-		<div id = "library" class = "page">
-
-		</div>
-	</div>
-
-	<ul id = "menu">
-		<li id = "home-icon">       <a href = "#t-home"><i></i></a>
-		<li id = "about-icon">      <a href = "#t-about"><i></i></a>
-		<li id = "portfolio1-icon"> <a href = "#t-portfolio1"><i></i></a>
-		<li id = "portfolio2-icon"> <a href = "#t-portfolio2"><i></i></a>
-		<li id = "library-icon">    <a href = "#t-library"><i></i></a>
-	</ul>
-
-		<!-- <ul id = "slide_menu">
-			<li id = "home_icon" class = "icon icon-home"></li>
-			<a href = "#jsDays_target"><li id = "jsDays_icon" class = "icon icon-code"></li></a>
-			<a href = "#starclipse_target"><li id = "starclipse_icon" class = "icon icon-rocket" onclick = "$('#starclipse').addClass('test')"></li></a>
-		</ul>
-
-		<div class = "slide" id = "home">
-			<section class = "content">
-				<div class = "title">
-					<h1><span>МОЕ</span><br>ПОРТФОЛИО</h1>
-				</div>
-			</section>
-		</div>
-
-		<div id = "jsDays_target">
-			<div class = "slide" id = "jsDays">
-				<section class = "content">
-					<div class = "title">
-						<h1>100<br>DAYS OF<br><span>JAVASCRIPT<span></h1>
-					</div>
-				</section>
-			</div>
-		</div>
-		<div id = "starclipse_target">
-			<div class = "slide" id = "starclipse">
-				<section class = "content">
-					<div class = "title">
-						<h1><span>Star</span>clipse</h1>
-					</div>
-				</section>
-			</div>
-		</div>
-
-
-		<div id = "menu">
-			<div><a href = "#main">Main</a></div>
-			<div><a href = "#about">About me</a></div>
-			<div><a href = "#portfolio">Portfolio</a></div>
-		</div>
-	</section>
-
-	<footer>
-
-	</footer> -->
 </div>
-<script>
-	QueryLoader.selectorPreload = "body";
-	QueryLoader.init();
-</script>
+
+<div id = "t-about">
+	<div id = "about" class = "page">
+    <div class = "content">
+      <h1> About</h1>
+    </div>
+	</div>
+</div>
+
+<div id = "t-prj-1">
+	<div id = "prj-1" class = "page">
+    <div class = "content">
+      <h1> 100 Days of JavaScipt</h1>
+    </div>
+	</div>
+</div>
+
+<div id = "t-prj-2">
+	<div id = "prj-2" class = "page">
+    <div class = "content">
+      <h1> Starclipse</h1>
+    </div>
+	</div>
+</div>
+
+<div id = "t-library">
+	<div id = "library" class = "page">
+    <div class = "content">
+      <h1> Library</h1>
+    </div>
+	</div>
+</div>
+
 <script src = "JavaScript/script.js"></script>
