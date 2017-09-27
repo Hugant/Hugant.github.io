@@ -8,7 +8,7 @@
 <link rel = "stylesheet" href = "Fonts/css/fontello.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500" >
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="JavaScript/queryLoader.js"></script>
+<script src="JavaScript/queryLoader2.min.js"></script>
 <script>
 	// $(document).ready(function() {
 	// 	location.href = "#";
@@ -30,6 +30,18 @@
  </script>
 
 <div id = "wrapper">
+ <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        QueryLoader2(document.querySelector("body"), {
+            barColor: "#efefef",
+            backgroundColor: "#111",
+            percentage: true,
+            barHeight: 1,
+            minimumTime: 400,
+            fadeOutTime: 1000
+        });
+    });
+</script>
 	<div id = "t-home">
 		<div id = "home" class = "page">
 			<div id = "wallpaper"></div>
