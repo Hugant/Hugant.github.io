@@ -1,5 +1,5 @@
 
-.icon-mail:before { content: '\e800'; } /* '' */
+.icon-book:before { content: '\e800'; } /* '' */
 .icon-home:before { content: '\e801'; } /* '' */
 .icon-github:before { content: '\f09b'; } /* '' */
 .icon-gplus:before { content: '\f0d5'; } /* '' */
@@ -8,3 +8,4 @@
 .icon-rocket:before { content: '\f135'; } /* '' */
 .icon-vk:before { content: '\f189'; } /* '' */
 .icon-facebook:before { content: '\f1d8'; } /* '' */
+.icon-about:before { content: '\f2bc'; } /* '' */
