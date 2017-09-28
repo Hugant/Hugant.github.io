@@ -23,7 +23,9 @@
     $("#home-icon").click(function() {
       $("#menu a").removeClass("big small");
       $("#menu a").addClass("default");
-      $("#home .content").removeClass("blur");
+      setTimeout(function() {
+        $("#home .content").removeClass("blur");
+      }, 500);
     });
   });
  </script>
