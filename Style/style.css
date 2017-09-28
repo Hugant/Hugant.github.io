@@ -112,6 +112,23 @@ html, body {
   -webkit-filter: blur(3px);
 }
 
+.page .content .title {
+  
+}
+
+.slide .title {
+	margin-top: 100px;
+	margin-left: 100px;
+	height: 100px;
+}
+.slide h1 {
+	color: white;
+	font-family: "Oswald", sans-serif;
+	font-size: 40pt;
+	font-weight: bold;
+	letter-spacing: 100;
+}
+
 /* targets */
 
 #t-about:target #about,
@@ -246,18 +263,7 @@ h1 {
 
 
 
-.slide .title {
-	margin-top: 100px;
-	margin-left: 100px;
-	height: 100px;
-}
-.slide h1 {
-	color: white;
-	font-family: "Oswald", sans-serif;
-	font-size: 40pt;
-	font-weight: bold;
-	letter-spacing: 100;
-}
+
 #home h1 span {
 	color: #fd4747;
 }
@@ -273,25 +279,5 @@ h1 {
 
 /********************** FOOTER */
 
-footer {
-
-}
 
 /********************** COMMON */
-
-/*.main:target {
-	height: 29px;
-	border-bottom: 1px solid white;
-}*/
-
-/********************** QYERYLOADER */
-
-.QOverlay {
-	background-color: #000;
-	z-index: 9999;
-}
-
-.QLoader {
-	background-color: #666;
-	height: 1px;
-}
