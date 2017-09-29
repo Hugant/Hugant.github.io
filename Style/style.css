@@ -69,11 +69,16 @@ html, body {
 }
 
 #menu .big {
+  color: #ff3737;
   -webkit-transform: scale(1.2);
      -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
        -o-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+#menu .big:hover {
+  color: #9f0202;
 }
 
 /* page */

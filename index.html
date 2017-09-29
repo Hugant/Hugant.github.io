@@ -15,18 +15,23 @@
     location.href = "#t-home";
 
     $("#menu a").on("click", function() {
-      $("#menu a").removeClass("big default");
-      $("#menu a").addClass("small");
-      $(this).addClass("big");
-      $("#home .content").addClass("blur");
-    });
+      let el = this;
 
-    $("#home-icon").click(function() {
-      $("#menu a").removeClass("big small");
-      $("#menu a").addClass("default");
-      setTimeout(function() {
-        $("#home .content").removeClass("blur");
-      }, 500);
+      if ($("#menu a").toArray().indexOf(this)) {
+        $("#menu a").removeClass("big default");
+        $("#menu a").addClass("small");
+        $("#home .content").addClass("blur");
+        setTimeout(function() {
+          $(el).removeClass("small");
+          $(el).addClass("big");
+        }, 800);
+      } else {
+        $("#menu a").removeClass("big small");
+        $("#menu a").addClass("default");
+        setTimeout(function() {
+          $("#home .content").removeClass("blur");
+        }, 500);
+      }
     });
   });
  </script>
