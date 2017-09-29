@@ -123,13 +123,9 @@ html, body {
 
 .page .content .title h1 {
   color: white;
-  font: bold 36.5pt "Oswald";
+  font: bold 3em "Oswald";
   margin: 0 0 20px 0;
-}
-
-.page .content .title h2 {
-  color: white;
-  font: 100 19pt "Oswald";
+  letter-spacing: 1.2px;
 }
 
 .page .content .title .underlined {
@@ -140,18 +136,18 @@ html, body {
   color: #ff3737;
 }
 
-
-.slide .title {
-	margin-top: 100px;
-	margin-left: 100px;
-	height: 100px;
+.page .content .blockquote {
+  width: 300px;
+  margin: 100px 0 0 100px;
+  color: white;
 }
-.slide h1 {
-	color: white;
-	font-family: "Oswald", sans-serif;
-	font-size: 40pt;
-	font-weight: bold;
-	letter-spacing: 100;
+
+.page .content .blockquote p {
+  font: normal 1.5em "Istok Web";
+}
+
+.page .content .blockquote .author {
+  text-align: left;
 }
 
 /* targets */
