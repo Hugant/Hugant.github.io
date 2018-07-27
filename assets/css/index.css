@@ -1,11 +1,17 @@
-/*a {
-	color: #446677;
+::selection {
+	background: #163B4D;
+	color: #fff;
 }
 
-a:hover,
-a:focus {
-	color: #002222;
-}*/
+::-moz-selection {
+	background: #163B4D;
+	color:#fff;
+}
+
+::-webkit-selection {
+	background: #163B4D;
+	color:#fff;
+}
 
 .navbar {
 	position: absolute;
