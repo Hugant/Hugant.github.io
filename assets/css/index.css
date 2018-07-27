@@ -1,0 +1,67 @@
+/*a {
+	color: #446677;
+}
+
+a:hover,
+a:focus {
+	color: #002222;
+}*/
+
+.navbar {
+	position: absolute;
+}
+
+.nav .nav-item:last-child a {
+	margin-right: 0;
+}
+
+.button-container .btn {
+	margin-right: .5rem;
+}
+
+.button-container .btn:last-child {
+	margin-right: 0;
+}
+
+.tab-content {
+	margin-top: 1rem;
+}
+
+.badges {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:  0 0 2rem 0;
+}
+
+.badges .badge {
+	margin: 0 .2rem;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0 0 0;
+}
+
+.links a {
+	margin: 0 1rem 0 0;
+}
+
+.links a:last-child {
+	margin-right: 0;
+}
+
+.links a i {
+	margin: 0 .5rem 0 0;
+}
+
+.slider {
+	margin: 2rem 0 0 0;
+}
+
+.slider .svg {
+	display: block;
+	width: 1440px;
+}

@@ -1,0 +1,176 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		link(href="assets/img/icon.ico" rel="icon")
+		title Hugant Mirron - Миронов Даниил
+		meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport")
+
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css")
+		link(href="assets/css/bootstrap.min.css" rel="stylesheet")
+		link(href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet")
+		link(href="assets/css/index.css" rel="stylesheet")
+	body.profile-page.sidebar-collapse
+		nav.navbar.navbar-expand-lg.fixed-top.navbar-transparent
+			.container
+				.navbar-translate
+					a.navbar-brand(href="") Hugant Mirron
+
+		.wrapper
+			.page-header.page-header-small(filter-color="bayoux")
+				.page-header-image(data-parallax="true" style="background-image: url('assets/img/back2.jpg')")
+				.container
+					.content-center
+						.photo-container
+							img(src="assets/img/hugant.jpg")
+						h3.title Миронов Даниил
+						p.category Программист, верстальщик
+
+		.section(style="z-index: 2")
+			.container
+				.button-container
+					a.btn.btn-primary.btn-round.btn-lg.btn-icon(href="https://vk.com/hugant" target="_target")
+						i.fa.fa-vk
+					a.btn.btn-primary.btn-round.btn-lg.btn-icon(href="https://www.instagram.com/hugantmirron" target="_target")
+						i.fa.fa-instagram
+					a.btn.btn-primary.btn-round.btn-lg.btn-icon(href="https://github.com/hugant" target="_target")
+						i.fa.fa-github
+
+				h3.title Обо мне
+				h5.description Со школьных времен меня заинтересовало программирование и верстание сайтов, со временем я начал углубляться в эти направления. В 11 классе я поступил в IT School SAMSUNG и успешно закончил обучение, получив знания и опыт в мобильной разработке. В данный момент я овладел следующими технологиями: <a href="https://ru.wikipedia.org/wiki/HTML" target="_target">HTML</a>, <a href="https://ru.wikipedia.org/wiki/CSS" target="_target">CSS</a>, <a href="https://pugjs.org/api/getting-started.html" target="_target">Pug</a>, <a href="https://bootstrap-4.ru/" target="_target">Bootstrap</a>, <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_target">JavaScript</a>, <a href="https://ru.wikipedia.org/wiki/Java" target="_target">Java</a>.
+
+				.col-md-6.ml-auto.mr-auto
+					h4.title.text-center Мое портфолио
+					.nav-align-center
+						ul.nav.nav-pills.nav-pills-primary(role="tablist")
+							li.nav-item
+								a.nav-link.active(href="#js-days" data-toggle="tab" role="tablist")
+									i.now-ui-icons.tech_controller-modern
+							li.nav-item
+								a.nav-link(href="#starclipse" data-toggle="tab" role="tablist")
+									i.now-ui-icons.objects_planet
+
+				.tab-content
+					.tab-pane.active#js-days(role="tabpanel")
+						.row
+							.col-md-6
+								h5.title 100 Days of JavaScript
+								p Проект 100 Days of JavaScript - своеобразный челлендж, который направлен на изучение языка программирования JavaScript посресдством реализации собственных идей в различных отраслях. Каждая такая реализация представляет собой мини-проект, именуемое как "день", на который вы можете перейти и посмотреть. Помимо этого существует возможность ознакомиться с исходным код каждого дня. С каждым разом я изучаю для себя что-то новое и тем самым повышаю свои навыки и умения по работе с данной технологией, из чего следует что чем дальше я продвигаюсь, тем все более сложные и интересные задумки я буду реализовывать.
+							.col-md-6.d-flex.flex-column.justify-content-around
+								.links
+									a.btn.btn-primary(href="https://100js.artyshko.ru" target="_target") Перейти на сайт
+									a.btn.btn-primary(href="https://github.com/Hugant/100js-Days" target="_target")
+										i.fa.fa-github
+										span GitHub
+								.technologies
+									h6.title Используемые технологии
+									.badges
+										span.badge.badge-primary Pug
+										span.badge.badge-primary CSS
+										span.badge.badge-primary JavaScript
+										span.badge.badge-primary Bootstrap
+								.project-progress-bars
+									.progress-container.progress-primary
+										span.progress-badge Прогресс реализации сайта для проекта
+										.progress
+											.progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;")
+												span.progress-value 90%
+									.progress-container.progress-primary
+										span.progress-badge Прогресс проекта
+										.progress
+											.progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 19%;")
+												span.progress-value 19%
+
+							.row.slider
+								.col-8.ml-auto.mr-auto
+									.carousel.slide#slider-100js(data-ride="carousel")
+										ol.carousel-indicators
+											li.actived(data-target="slider-100js" data-slide-to="0")
+											li(data-target="slider-100js" data-slide-to="1")
+											li(data-target="slider-100js" data-slide-to="2")
+										.carousel-inner(role="listbox")
+											.carousel-item.actived
+												img.d-block(src="assets/img/slider-100js/main.png")
+												.carousel-caption.d-none.d-md-block
+													h5 Главная страница
+											.carousel-item
+												img.d-block(src="assets/img/slider-100js/days.png")
+												.carousel-caption.d-none.d-md-block
+													h5.text-dark Страница Days
+											.carousel-item
+												img.d-block(src="assets/img/slider-100js/day.png")
+												.carousel-caption.d-none.d-md-block
+													h5 Страница одного из дней
+										a.carousel-control-prev(href="#slider-100js" role="button" data-slide="prev")
+											i.now-ui-icons.arrows-1_minimal-left
+										a.carousel-control-next(href="#slider-100js" role="button" data-slide="next")
+											i.now-ui-icons.arrows-1_minimal-right
+
+					.tab-pane#starclipse(role="tabpanel")
+						.row
+							.col-md-6
+								h5.title Starclipse
+								p Космическая онлайн стратегия реального времени, в которой можно получать дополнительные бонусы за счет хороших оценок в электронном журнале или за решение каких-либо задач. Основная идея игры заключается в взаимодействие между игроками. Каждый игрок развивается посредством улучшения зданий, которые приносят ресурсы(золото, железо, камень, уголь, дерево, вода, кислород, пища, деньги, плодородная земля). За счет ресурсов игрок может построить корабли разного типажа(военные, перевозчики и т.д), улучшить здания или обмениваться ресурсами с другими игроками. Игроки могут захватывать планеты других игроков, уничтоженные игроки будут начинать игру заново. Игрок, который подключит свой аккаунт eljur.ru(новейшая система учета успеваемости для школ и других учебных заведений) к приложению будет получать дополнительные ресурсы за счет хороших оценок.
+							.col-md-6.d-flex.flex-column.justify-content-around
+								.links.mt-5
+									a.btn.btn-primary(href="https://github.com/Hugant/Starclipse-Android")
+										i.fa.fa-github
+										span GitHub
+								.technologies
+									h6.title Используемые технологии
+									.badges
+										span.badge.badge-primary Java
+										span.badge.badge-primary XML
+								.project-progress-bars.mb-5
+									.progress-container.progress-primary
+										span.progress-badge Прогресс проекта
+										.progress
+											.progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;")
+												span.progress-value 40%
+
+							.row.slider
+								.col-8.ml-auto.mr-auto
+									.carousel.slide#slider-starclipse(data-ride="carousel")
+										ol.carousel-indicators
+											li.actived(data-target="slider-starclipse" data-slide-to="0")
+											li(data-target="slider-starclipse" data-slide-to="1")
+											li(data-target="slider-starclipse" data-slide-to="2")
+											li(data-target="slider-starclipse" data-slide-to="3")
+											li(data-target="slider-starclipse" data-slide-to="4")
+										.carousel-inner(role="listbox")
+											.carousel-item.actived
+												img.svg(src="assets/img/slider-starclipse/slide1.svg")
+											.carousel-item
+												img.svg(src="assets/img/slider-starclipse/slide2.svg")
+											.carousel-item
+												img.svg(src="assets/img/slider-starclipse/slide3.svg")
+											.carousel-item
+												img.svg(src="assets/img/slider-starclipse/slide4.svg")
+											.carousel-item
+												img.svg(src="assets/img/slider-starclipse/slide5.svg")
+										a.carousel-control-prev(href="#slider-starclipse" role="button" data-slide="prev")
+											i.now-ui-icons.arrows-1_minimal-left
+										a.carousel-control-next(href="#slider-starclipse" role="button" data-slide="next")
+											i.now-ui-icons.arrows-1_minimal-right
+
+
+		footer.footer.footer-default
+			.container.d-flex.text-center.justify-content-center.items-align-center
+				div Copyright by <a href="">Hugant Mirron</a> <br> <script> document.write(new Date().getFullYear()) </script>
+
+
+
+
+		//- Core JS Files
+		script(src="assets/js/core/jquery.3.2.1.min.js")
+		script(src="assets/js/core/popper.min.js")
+		script(src="assets/js/core/bootstrap.min.js")
+		//- Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/
+		script(src="assets/js/plugins/bootstrap-switch.js")
+		//- Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/
+		script(src="assets/js/plugins/nouislider.min.js")
+		//- Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+		script(src="assets/js/plugins/bootstrap-datepicker.js")
+		//- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc
+		script(src="assets/js/now-ui-kit.js?v=1.1.0")
