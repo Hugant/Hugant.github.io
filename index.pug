@@ -18,6 +18,7 @@ html
 					a.navbar-brand(href="") Hugant Mirron
 
 		.wrapper
+			<!--suppress HtmlUnknownAttribute -->
 			.page-header.page-header-small(filter-color="primary")
 				.page-header-image(data-parallax="true" style="background-image: url('assets/img/back2.jpg')")
 				.container
@@ -38,17 +39,42 @@ html
 						i.fa.fa-github
 
 				h3.title Обо мне
-				h5.description Со школьных времен меня заинтересовало программирование и верстание сайтов, со временем начал углубляться в эти направления. В 11 классе поступил в IT School SAMSUNG и успешно закончил обучение, получив знания и опыт в мобильной разработке. Владею следующими технологиями: <a href="https://ru.wikipedia.org/wiki/HTML" target="_target">HTML</a>, <a href="https://ru.wikipedia.org/wiki/CSS" target="_target">CSS</a>, <a href="https://pugjs.org/api/getting-started.html" target="_target">Pug</a>, <a href="https://bootstrap-4.ru/" target="_target">Bootstrap</a>, <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_target">JavaScript</a>, <a href="https://ru.wikipedia.org/wiki/Java" target="_target">Java</a>.
-
+				h5.description
+					| Программированием и версткой сайтов я начал заниматься ещё со школьной
+					| скамьи, эта сфера деятельности меня очень сильно заинтересовала и
+					| затянула. С каждым годом я все больше углублялся в изучение этой сферы
+					| и практиковался в различных для себя отраслях.
+					| В одиннадцатом классе, помимо написания и защиты дипломной работы на
+					| тему "Создание гексакоптера и программы управления для него",
+					| я поступил в IT ШКОЛУ SAMSUNG
+					| (программа дополнительного образования по основам IT и программирования),
+					| посредством собеседования, на котором было достаточно много талантливых
+					| ребят, но прошли лишь немногие. По истечению целого академического
+					| года я получил знания и опыт в мобильной разработке на Java под Android,
+					| и успешно закончил обучение, защитив свой итоговый проект "Starclipse",
+					| заняв 1 место в номинации GameDev.
+					| На данный момент времени я студент очной формы 2-го курса
+					| СибГУ им. М.Ф.Решетнева по специальности "Автоматизация технологических
+					| процессов и производств".
+					| Прилагаю перечень технологий, с которыми я работаю:
+					| <a href="https://ru.wikipedia.org/wiki/HTML" target="_target">HTML</a>,
+					| <a href="https://ru.wikipedia.org/wiki/CSS" target="_target">CSS</a>,
+					| <a href="https://pugjs.org/api/getting-started.html" target="_target">Pug</a>,
+					| <a href="https://bootstrap-4.ru/" target="_target">Bootstrap</a>,
+					| <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_target">JavaScript</a>,
+					| <a href="https://ru.wikipedia.org/wiki/Java" target="_target">Java</a>.
+					| Помимо перечисленного перечня выше, я изучаю и немного владею
+					| <a href="https://ru.wikipedia.org/wiki/Python" target="_target">Python</a>
+					| и <a href="https://ru.wikipedia.org/wiki/C%2B%2B" target="_target">C++</a>.
 				.col-md-6.ml-auto.mr-auto
 					h4.title.text-center Мое портфолио
 					.nav-align-center
 						ul.nav.nav-pills.nav-pills-primary(role="tablist")
 							li.nav-item
-								a.nav-link.active(href="#js-days" data-toggle="tab" role="tablist")
+								a.nav-link.active(href="#js-days" data-toggle="tab" role="tab")
 									i.now-ui-icons.tech_controller-modern
 							li.nav-item
-								a.nav-link(href="#starclipse" data-toggle="tab" role="tablist")
+								a.nav-link(href="#starclipse" data-toggle="tab" role="tab")
 									i.now-ui-icons.objects_planet
 
 				.tab-content
