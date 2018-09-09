@@ -1,0 +1,29 @@
+block variables
+
+.carousel.slide(id=sliderId data-ride="carousel")
+	ol.carousel-indicators
+		- for (let i = 0; i < images.length; i++)
+			if (i === 0)
+				li.actived(data-target=sliderId data-slide-to=i)
+			else
+				li(data-target=sliderId data-slide-to=i)
+	.carousel-inner(role="listbox")
+		- for (let i = 0; i < images.length; i++)
+			if (images[0].includes("svg"))
+				if (i === 0)
+					.carousel-item.actived
+						img.svg(src=images[i])
+				else
+					.carousel-item
+						img.svg(src=images[i])
+			else
+				if (i === 0)
+					.carousel-item.actived
+						img.d-block(src=images[i])
+				else
+					.carousel-item
+						img.d-block(src=images[i])
+	a.carousel-control-prev(href="#" + sliderId role="button" data-slide="prev")
+		i.now-ui-icons.arrows-1_minimal-left
+	a.carousel-control-next(href="#" + sliderId role="button" data-slide="next")
+		i.now-ui-icons.arrows-1_minimal-right
