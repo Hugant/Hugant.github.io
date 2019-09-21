@@ -1,0 +1,38 @@
+extends ../layouts/project
+
+mixin progressBar(title, progress)
+	.progress-container.progress-primary
+		span.progress-badge=title
+		.progress
+			.progress-bar(role="progressbar" aria-valuenow="60" aria-valuemin="0"
+			aria-valuemax="100" style=`width: ${progress}%;`)
+				span.progress-value=progress + "%"
+
+block variables
+	-
+		var projectId = "reportmaker"
+		var active = false
+		var title = "ReportMaker"
+		var description = "Сайт для создания отчетов из данных поступемых " +
+		"с контроллеров. Поступишвие данные с контроллера визуально представляются " +
+		"на сайте, с возможностью скачать их в форматах docx и xlsx, для дальнейшего " +
+		"использования в программах Microsoft Word, Microsoft Excel."
+
+
+block links
+	//a.btn.btn-primary(href="https://100js.artyshko.ru" target="_target") Перейти на сайт
+	//	a.btn.btn-primary(href="https://github.com/Hugant/100js-Days" target="_target")
+	//		i.fa.fa-github
+	//		span GitHub
+
+block badges
+	span.badge.badge-primary Django
+	span.badge.badge-primary Python
+	span.badge.badge-primary Bootstrap
+	span.badge.badge-primary HTML
+
+block progress-bars
+	+progressBar("Прогресс проекта", 70)
+
+block slider
+	include ../sliders/reportmaker
