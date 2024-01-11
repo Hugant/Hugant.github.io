@@ -1,0 +1,130 @@
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+img {
+	user-select: none;
+}
+
+*::selection {
+	background: #525252;
+	color: #ffffff;
+}
+
+*::-moz-selection {
+	background: #525252;
+	color: #ffffff;
+}
+
+*::-webkit-selection {
+	background: #525252;
+	color: #ffffff;
+}
+
+p, span {
+	font-size: 14px;
+}
+
+a {
+	display: block;
+	color: #1c1c1a;
+	font-size: 14px;
+}
+
+.dark a {
+	color: #fff;
+}
+
+.dark {
+	background: #1c1c1a;
+	color: #fff;
+}
+
+.divider {
+	border-top: 3px solid #1c1c1a;
+	margin-bottom: .8rem;
+}
+
+.dark .divider {
+	border-color: #fff;
+}
+
+.my-card .divider {
+	margin-right: -1.5rem;
+	border-width: 2px;
+}
+
+.my-card {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #1c1c1a;
+}
+
+.my-card > * {
+	padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.my-card .me img {
+	border-radius: 50%;
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+	filter: grayscale(1);
+	margin-bottom: 5rem;
+}
+
+.my-card .contact .socials {
+	display: flex;
+}
+
+.my-card .contact .socials a {
+	text-decoration: none;
+	font-size: 24px;
+	margin-right: .5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .1rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	margin-bottom: 1rem;
+}
+
+.content .divider {
+	margin-bottom: 3rem;
+}
+
+.content span,
+.content p {
+	color: #999999;
+}
+
+.content > div p {
+	margin-bottom: .3rem;
+}
+
+.accordion h2 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+	box-shadow: none;
+	background-color: #fff;
+	color: #1c1c1a;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.accordion-button {
+	font-weight: 600;
+}
