@@ -64,13 +64,55 @@ a {
 	padding: 2.5rem 1.5rem 0 1.5rem;
 }
 
+.my-card .me .img-wrapper {
+	/* width: 100%; */
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 5rem;
+}
+
 .my-card .me img {
 	border-radius: 50%;
 	filter: gray; /* IE6-9 */
 	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 	filter: grayscale(1);
-	margin-bottom: 5rem;
+	transition-duration: .5s;
 }
+
+.my-card .me img:hover {
+	filter: none;
+	-webkit-filter: none;
+	transform: scale(1.2);
+}
+
+.my-card .name-wrapper {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+
+.my-card .name-wrapper h1 {
+	transition-duration: .5s;
+}
+
+.my-card .name-wrapper h1.hidden {
+	position: absolute;
+	transform: translateY(calc(1.375rem - 3vw));
+}
+
+.my-card .name-wrapper:hover h1:nth-child(1) {
+	transform: translateY(calc(-1.375rem - 1.5vw));
+	/* transform: translateX(-200px); */
+}
+
+.my-card .name-wrapper:hover h1:nth-child(2) {
+	transform: translateY(calc(-1.375rem - 1.5vw));
+}
+
+.my-card .name-wrapper:hover h1:nth-child(3) {
+	transform: translateY(calc(-1.375rem - 2.5vw));
+}
+
 
 .my-card .contact .socials {
 	display: flex;
@@ -119,6 +161,10 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: none;
 	background-color: #fff;
 	color: #1c1c1a;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: var(--bs-accordion-btn-icon);
 }
 
 .accordion-button:focus {
